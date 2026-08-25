@@ -1,0 +1,3 @@
+jsFrontend.testimonies={init:function(){$('.testimony-slider').each(function(){jsFrontend.testimonies.relatedSlider($(this))})},relatedSlider:function($slider){var $container=$slider.closest('.module-testimonies')
+$slider.slick({slidesToShow:1,slidesToScroll:1,arrows:!0,prevArrow:$container.find('.testimonies-prev-arrow'),nextArrow:$container.find('.testimonies-next-arrow'),lazyLoad:'ondemand',autoplay:!1,infinite:!1,dots:!1,pauseOnHover:!1,})}}
+$(jsFrontend.testimonies.init)

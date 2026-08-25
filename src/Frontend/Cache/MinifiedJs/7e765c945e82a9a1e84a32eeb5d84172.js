@@ -1,0 +1,2 @@
+jsFrontend.news={init:function(){jsFrontend.news.recentSlider()},recentSlider:function(){$('#recent-news-slider').slick({slidesToShow:3,slidesToScroll:3,arrows:!0,prevArrow:'.news-prev-arrow',nextArrow:'.news-next-arrow',lazyLoad:'ondemand',autoplay:!1,infinite:!1,dots:!1,pauseOnHover:!1,responsive:[{breakpoint:1700,settings:{slidesToShow:3,slidesToScroll:3,}},{breakpoint:992,settings:{slidesToShow:2,slidesToScroll:2,}},{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1,centerMode:!0,centerPadding:'10%',}}]})}}
+$(jsFrontend.news.init)

@@ -1,0 +1,3 @@
+jsFrontend.cardCarousel={init:function(){$('.carousel-slider').each(function(){jsFrontend.cardCarousel.relatedSlider($(this))})},relatedSlider:function($slider){var $container=$slider.closest('.module-card-carousel')
+$slider.slick({slidesToShow:3,slidesToScroll:3,arrows:!0,prevArrow:$container.find('.prev-arrow'),nextArrow:$container.find('.next-arrow'),lazyLoad:'ondemand',autoplay:!1,infinite:!1,dots:!1,pauseOnHover:!1,responsive:[{breakpoint:1700,settings:{slidesToShow:3,slidesToScroll:3,}},{breakpoint:992,settings:{slidesToShow:2,slidesToScroll:2,}},{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1,centerMode:!0,centerPadding:'10%',}}]})}}
+$(jsFrontend.cardCarousel.init)

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+            Powerland
+        </title>
+<link href="../../static/images/favicon.209c8202e028.png" rel="shortcut icon" type="image/png"/>
+<link crossorigin="anonymous" href="https://kit.fontawesome.com/85cca95b60.css" rel="stylesheet"/>
+<link href="../../static/lib/bootstrap-select-1.14.0-beta2/css/bootstrap-select.min.a00e2da3e771.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../static/lib/bootstrap-multiselect/css/bootstrap-multiselect.min.6456f6fd850f.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../../static/platform/css/theme.df5ab0ebb146.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="../../static/lib/jquery-3.7.1/jquery-3.7.1.min.2c872dbe60f4.js"></script>
+<script src="../../static/lib/bootstrap-5.3.8/js/bootstrap.bundle.min.c3d406f6f981.js"></script>
+<script src="../../static/lib/bootstrap-select-1.14.0-beta2/js/bootstrap-select.min.e73f77884a87.js"></script>
+<script src="../../static/lib/bootstrap-multiselect/js/bootstrap-multiselect.min.19667854ee15.js"></script>
+<script src="../../static/lib/responsive-bootstrap-toolkit/js/responsive-bootstrap-toolkit.min.091a6ea697b2.js"></script>
+<script type="text/javascript">
+    var CSRF_TOKEN = 'csrftoken';
+    var STATIC_URL = '/static/';
+    var decimal_sep = "1,2".match(/.*([^ 0-9\-])/)[1];
+
+    function format_number(value, precision) {
+        return value.toFixed(precision).replace('.', decimal_sep);
+    }
+</script>
+<!-- Hotjar Tracking -->
+</head>
+<body class="bc-welcome-body no-footer"><div class="mega-menu" style="display:none" aria-hidden="true"></div>
+<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow-x: hidden; display: flex; justify-content: center; align-items: stretch;">
+<div class="bc-welcome-background-image d-none d-sm-block" style="flex: 1; background-image: url(../../static/images/welcome-sidebar.b5438ebe35bb.jpg);">
+<div class="navbar-brand" style="padding: 15px;">
+<a class="bc-logo" href="./">
+<img alt="Powerland - Vandotec NV" class="img-fluid" src="../../static/images/logo-light.ca0e5a44bbe4.png" style="max-height: 60px"/>
+</a>
+</div>
+</div>
+<div style="flex: 2; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+<div class="langbar" style="align-self: flex-end;">
+<form action="../../i18n/setlang/" data-demo-static="1" method="post">
+<input name="csrfmiddlewaretoken" type="hidden" value="hpY9al5Ng2fz11OZFDzGnxRdNKgcDkpAMMpwnfEqX0SN9Nxsj9JbQDUiVDm4SBqU"/>
+<select aria-label="Language" class="selectpicker w-100" name="language">
+<option selected="" value="nl">
+                                    nl
+                                </option>
+<option value="fr">
+                                    fr
+                                </option>
+<option value="en-us">
+                                    en
+                                </option>
+<option value="de">
+                                    de
+                                </option>
+</select>
+<input name="next" type="hidden" value="/welcome/?"/>
+</form>
+<script>
+                  $(".langbar select[name=language]")
+                      .on('change', function () { $(this).parents('form:first').submit(); });
+                  $('.selectpicker').selectpicker('refresh');
+                    
+                    </script>
+</div>
+<div style="flex: 1;"></div>
+<div class="bc-welcome-content">
+<div class="d-none" id="internet_explorer_warning">
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">It looks like you're using Internet Explorer.</h4>
+<p class="mb-0">We are sorry to say that our website no longer supports this browser.
+        We recommend that you switch to one of our supported browsers, such as
+        <a href="https://www.microsoft.com/edge">Microsoft Edge</a>,
+        <a href="https://www.google.com/chrome/">Google Chrome</a> or
+        <a href="https://getfirefox.com/">Mozilla Firefox</a>.
+  </p></div>
+</div>
+<script>
+  function internetExplorerWarning() {
+    var isIE = /Trident\/|MSIE/.test(window.navigator.userAgent);
+    if (isIE) {
+      var el = document.getElementById('internet_explorer_warning');
+      el.classList.remove('d-none');
+    }
+  }
+  document.addEventListener('DOMContentLoaded', internetExplorerWarning);
+</script>
+<div class="bc-welcome-instructions">
+<h1>Welkom</h1>
+<div>Log in door hieronder je accountgegevens in te vullen.</div>
+</div>
+<form class="my-4" data-demo-static="1" method="post">
+<input name="csrfmiddlewaretoken" type="hidden" value="hpY9al5Ng2fz11OZFDzGnxRdNKgcDkpAMMpwnfEqX0SN9Nxsj9JbQDUiVDm4SBqU"/>
+<div class="mb-3" id="div_id_login"> <label class="form-label requiredField" for="id_login">
+                E-mail<span class="asteriskField">*</span> </label> <input autocomplete="email" class="textinput form-control" id="id_login" maxlength="320" name="login" placeholder="E-mailadres" required="" type="email"/> </div> <div class="mb-3" id="div_id_password"> <label class="form-label requiredField" for="id_password">
+                Wachtwoord<span class="asteriskField">*</span> </label> <input aria-describedby="id_password_helptext" autocomplete="current-password" class="passwordinput form-control" id="id_password" name="password" placeholder="Wachtwoord" required="" type="password"/> <div class="form-text" id="id_password_helptext"><a href="https://www.powerland.be/welcome/password/reset/">Wachtwoord vergeten?</a></div> </div> <div class="mb-3"> <div class="form-check" id="div_id_remember"> <input class="checkboxinput form-check-input" id="id_remember" name="remember" type="checkbox"/> <label class="form-check-label" for="id_remember">
+                    
+                    Onthouden
+                </label> </div> </div>
+<button class="btn btn-primary w-100" type="submit">Inloggen</button>
+</form>
+<h6>Alternatieve opties</h6>
+<div class="d-flex flex-column gap-1 mb-4">
+<button class="btn btn-default w-100" form="mfa_login" id="passkey_login" type="submit">Aanmelden met een passkey</button>
+<noscript>Deze functionaliteit vereist JavaScript.</noscript>
+<script src="../../static/mfa/js/webauthn-json.6a3183313556.js"></script>
+<script src="../../static/mfa/js/webauthn.88878ff60271.js"></script>
+<script src="../../static/account/js/onload.79dcf5a401d0.js"></script>
+<form action="../../accounts/2fa/webauthn/login/" data-demo-static="1" id="mfa_login" method="post">
+<input name="csrfmiddlewaretoken" type="hidden" value="hpY9al5Ng2fz11OZFDzGnxRdNKgcDkpAMMpwnfEqX0SN9Nxsj9JbQDUiVDm4SBqU"/>
+<input id="mfa_credential" name="credential" type="hidden"/>
+</form>
+<script data-allauth-onload="allauth.webauthn.forms.loginForm" type="application/json">{
+    "ids": {
+        "login": "passkey_login",
+        "credential": "mfa_credential"
+    }
+}
+</script>
+<div class="d-none" id="google-sign-in-block">
+<script async="" defer="" src="https://accounts.google.com/gsi/client"></script>
+<div data-auto_prompt="false" data-client_id="906687638388-5a508rbdjjltc5vgbg7v9t0v5577sab1.apps.googleusercontent.com" data-login_uri="/accounts/google/login/token/" id="g_id_onload">
+</div>
+<div class="g_id_signin" style="display: flex; justify-content: center; align-items: center;"></div></div>
+</div>
+<p class="text-center">
+            Heb je geen account? <a href="https://www.powerland.be/sp/customer/register/">Maak er hier een aan</a>
+</p>
+<p class="text-center">
+            Wil je een toestel registreren? <a href="https://www.powerland.be/co/register/">Klik hier</a>
+</p>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const signInWithGoogleBlock = document.getElementById("google-sign-in-block");
+            const signInWithGoogleVisible = "False" == "True";
+            const emailInput = document.getElementById("id_login");
+        
+            const showSignInWithGoogleButton = () => {
+                if (signInWithGoogleBlock && signInWithGoogleBlock.classList.contains("d-none")) {
+                    signInWithGoogleBlock.classList.remove("d-none");
+                }
+            }
+        
+            const hideSignInWithGoogleButton = () => {
+                if (signInWithGoogleBlock && !signInWithGoogleBlock.classList.contains("d-none")) {
+                    signInWithGoogleBlock.classList.add("d-none");
+                }
+            }
+        
+            const shouldShowSignInWithGoogleButton = (email) => {
+                if (email && typeof email === 'string' && email.endsWith("@optimile.eu")) {
+                    showSignInWithGoogleButton();
+                } else if (signInWithGoogleBlock && !signInWithGoogleVisible) {
+                    hideSignInWithGoogleButton();
+                }
+            }
+        
+            if (emailInput) {
+                emailInput.addEventListener("input", (event) => {
+                    const emailValue = event.target.value;
+                    shouldShowSignInWithGoogleButton(emailValue);
+                });
+            }
+        
+            if (signInWithGoogleVisible) {
+                showSignInWithGoogleButton();
+            }
+        })
+    </script>
+</div>
+<div style="flex: 2;"></div>
+</div>
+</div>
+<div class="position-absolute top-0 start-50">
+<div id="global-messages">
+</div>
+</div>
+</body>
+</html>
