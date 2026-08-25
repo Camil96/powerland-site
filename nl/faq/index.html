@@ -19,10 +19,10 @@
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="Veelgestelde vragen | Powerland" property="og:title"/>
-<link href="./" hreflang="nl" rel="alternate"/>
-<link href="../../fr/faq/" hreflang="fr" rel="alternate"/>
-<link href="../../en/faq/" hreflang="en" rel="alternate"/>
-<link href="./" rel="canonical"/>
+<link href="." hreflang="nl" rel="alternate"/>
+<link href="../../fr/" hreflang="fr" rel="alternate"/>
+<link href="../../en/" hreflang="en" rel="alternate"/>
+<link href="." rel="canonical"/>
 <title>Veelgestelde vragen | Powerland</title>
 <link href="../../src/Frontend/Cache/MinifiedCss/c01a86f121d4182a164eaca5efdfbb8b.css" rel="stylesheet"/>
 <link href="../../humans.txt" rel="author"/>
@@ -52,8 +52,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <![endif]-->
-
-
+<script>
+      window.onBugsnagLoaded = function () {
+        Bugsnag.start({
+          apiKey: 'ea6c5e43628c9e158f09602020ca27b8',
+          collectUserIp: false,
+        })
+      }
+    </script>
+<script async="" onload="onBugsnagLoaded()" src="//d2wy8f7a9ursnm.cloudfront.net/v8/bugsnag.min.js"></script>
 <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -1246,16 +1253,25 @@
 </script>
 <!-- End Google Tag Manager Data Layer -->
 <!-- Google Tag Manager -->
-
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PGWSQ8M');</script>
 <!-- End Google Tag Manager -->
 <meta content="04fbmibc1y4ksas8453if77jpujsl8" name="facebook-domain-verification"/>
 <!-- Leadinfo tracking code -->
-
+<script>
+(function(l,e,a,d,i,n,f,o){if(!l[i]){l.GlobalLeadinfoNamespace=l.GlobalLeadinfoNamespace||[];
+l.GlobalLeadinfoNamespace.push(i);l[i]=function(){(l[i].q=l[i].q||[]).push(arguments)};l[i].t=l[i].t||n;
+l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;o.src=d;f.parentNode.insertBefore(o,f);}
+}(window,document,'script','https://cdn.leadinfo.net/ping.js','leadinfo','LI-68F0E1CEA36FB'));
+</script>
 <script>var jsData = {"LANGUAGE":"nl","privacyConsent":{"possibleLevels":["functional","statistics","marketing"],"levelsHash":"e08ece535d52cf9d83ecb7a37463d380","visitorChoices":{"functional":true,"statistics":false,"marketing":false}}}</script>
 </head>
 <body class="nl" itemscope="" itemtype="http://schema.org/WebPage">
 <!-- Google Tag Manager (noscript) -->
-
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PGWSQ8M&amp;anonymizeIp=1&amp;privacyConsentLevelFunctionalAgreed=1&amp;privacyConsentLevelStatisticsAgreed=0&amp;privacyConsentLevelMarketingAgreed=0" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="root">
 <!-- warning for people that don't have JS enabled -->
@@ -1274,8 +1290,96 @@
 
 <![endif]-->
 <a class="skip-content" href="#main">Ga naar de inhoud</a>
-
-
+<div aria-labelledby="privacyConsentInfoTitle" class="card" data-role="privacy_consent_info" id="privacyConsentInfo">
+<div class="card-body">
+<h4 class="card-title" id="privacyConsentInfoTitle">We hechten belang aan uw privacy</h4>
+<p class="card-text">We gebruiken cookies om de functionaliteit van de website te optimaliseren en u de best mogelijke ervaring te bieden. Klik op “Cookies accepteren” om alle cookies te aanvaarden of stel zelf uw voorkeuren in. Meer weten? Lees meer over ons <a href="../../cookie-policy/">cookiebeleid</a>.</p>
+<div class="card-actions">
+<a data-bs-target="#privacyConsentDialog" data-bs-toggle="modal" data-role="privacy_consent_info_preferences_button" href="#">
+            Uw voorkeuren
+          </a>
+<button class="btn btn-primary" data-role="privacy_consent_info_save_button" type="submit">
+            Cookies accepteren
+          </button>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="privacyConsentDialogTitle" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" data-role="privacy_consent_dialog" id="privacyConsentDialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<form data-role="privacy_consent_dialog_form">
+<div class="modal-header">
+<h4 id="privacyConsentDialogTitle">Jouw privacy voorkeuren</h4>
+<button aria-label="sluiten" class="btn-close" data-bs-dismiss="modal" title="sluiten" type="button"></button>
+</div>
+<div class="modal-body">
+<p>U kan zelf kiezen welke cookies u toelaat. Hou er wel rekening mee dat dit uw ervaring op de website kan verminderen.</p>
+<div class="accordion" id="accordionCookies">
+<div class="accordion-item">
+<div class="input-group">
+<h2 class="accordion-header flex-grow-1" id="headingFunctional">
+<button aria-controls="collapseFunctional" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFunctional" data-bs-toggle="collapse" type="button">
+                        Functionele cookies
+                      </button>
+</h2>
+<div class="form-check form-switch">
+<input aria-describedby="privacyConsentLevelFunctionalHelpBlock" aria-label="Functionele cookies" checked="" class="form-check-input" data-role="privacy-level" data-value="functional" disabled="" id="privacyConsentLevelFunctionalCheckbox" name="privacyConsentLevelFunctionalCheckbox" role="switch" type="checkbox"/>
+</div>
+</div>
+<div aria-labelledby="headingFunctional" class="accordion-collapse collapse" data-bs-parent="#accordionCookies" id="collapseFunctional">
+<div class="accordion-body">
+                      Cookies die noodzakelijk zijn voor de normale werking van de website.
+                    </div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="input-group">
+<h2 class="accordion-header flex-grow-1" id="headingStatistics">
+<button aria-controls="collapseStatistics" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseStatistics" data-bs-toggle="collapse" type="button">
+                          Statistische cookies
+                        </button>
+</h2>
+<div class="form-check form-switch">
+<input aria-describedby="privacyConsentLevelStatisticsHelpBlock" aria-label="Statistische cookies" class="form-check-input" data-role="privacy-level" data-value="statistics" id="privacyConsentLevelStatisticsCheckbox" name="privacyConsentLevelStatisticsCheckbox" role="switch" type="checkbox"/>
+</div>
+</div>
+<div aria-labelledby="headingStatistics" class="accordion-collapse collapse" data-bs-parent="#accordionCookies" id="collapseStatistics">
+<div class="accordion-body">
+                        Cookies die gebruikt worden om analyses van surfgedrag op de website mogelijk te maken.
+                      </div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="input-group">
+<h2 class="accordion-header flex-grow-1" id="headingMarketing">
+<button aria-controls="collapseMarketing" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseMarketing" data-bs-toggle="collapse" type="button">
+                          Marketing cookies
+                        </button>
+</h2>
+<div class="form-check form-switch">
+<input aria-describedby="privacyConsentLevelMarketingHelpBlock" aria-label="Marketing cookies" class="form-check-input" data-role="privacy-level" data-value="marketing" id="privacyConsentLevelMarketingCheckbox" name="privacyConsentLevelMarketingCheckbox" role="switch" type="checkbox"/>
+</div>
+</div>
+<div aria-labelledby="headingMarketing" class="accordion-collapse collapse" data-bs-parent="#accordionCookies" id="collapseMarketing">
+<div class="accordion-body">
+                        Cookies die het mogelijk maken meer relevante advertenties te tonen.
+                      </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<a data-role="privacy_consent_dialog_necessary_button" href="#">
+                Accepteer enkel noodzakelijke cookies
+              </a>
+<button class="btn btn-primary" data-role="privacy_consent_dialog_save_button" type="submit">
+                Bewaar mijn voorkeuren
+              </button>
+</div>
+</form>
+</div>
+</div>
+</div>
 <nav class="navbar navbar-expand meta-top-nav">
 <div class="container container-fluid-mobile">
 <div class="navbar-nav d-flex flex-column w-100">
@@ -1298,19 +1402,19 @@
     </button>
 <ul class="dropdown-menu dropdown-menu-end">
 <li>
-<a class="dropdown-item active" href="./">
+<a class="dropdown-item active" href=".">
 <i class="fa-solid fa-check"></i>
                         Nederlands
           </a>
 </li>
 <li>
-<a class="dropdown-item" href="../../fr/faq/">
+<a class="dropdown-item" href="../../fr/">
 <span style="display: inline-block; width: 1rem"></span>
                         Frans
           </a>
 </li>
 <li>
-<a class="dropdown-item" href="../../en/faq/">
+<a class="dropdown-item" href="../../en/">
 <span style="display: inline-block; width: 1rem"></span>
                         Engels
           </a>
@@ -1362,7 +1466,7 @@
 <a class="nav-link" href="https://jobs.powerland.be/nl" title="Jobs">Jobs</a>
 </li>
 <li class="nav-item active">
-<a class="nav-link" href="./" title="FAQ">FAQ</a>
+<a class="nav-link" href="." title="FAQ">FAQ</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="../contact/" title="Contact">Contact</a>
@@ -1509,7 +1613,7 @@
 <a class="nav-link" href="https://jobs.powerland.be/nl" title="Jobs">Jobs</a>
 </li>
 <li class="nav-item active">
-<a class="nav-link" href="./" title="FAQ">FAQ</a>
+<a class="nav-link" href="." title="FAQ">FAQ</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="../contact/" title="Contact">Contact</a>
@@ -1521,7 +1625,7 @@
 <div class="d-lg-none mega-menu-languages">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item active">
-<a class="nav-link" href="../">NL</a>
+<a class="nav-link" href="..">NL</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="../../fr/">FR</a>
@@ -1541,12 +1645,12 @@
 <h1>Veelgestelde vragen</h1>
 <div class="two-buttons">
 <div class="btn-wrapper px-0">
-<a class="btn btn-white overlapping-pill active" href="./">
+<a class="btn btn-white overlapping-pill active" href=".">
             Bedrijf
           </a>
 </div>
 <div class="btn-wrapper px-0">
-<a class="btn btn-white overlapping-pill" href="./">
+<a class="btn btn-white overlapping-pill" href=".">
             Particulier
           </a>
 </div>
@@ -1560,7 +1664,7 @@
 <div class="widget-body">
 <ul>
 <li>
-<a href="./" title="Alles">
+<a href="." title="Alles">
               Alles
             </a>
 </li>
@@ -3774,5 +3878,30 @@ Deze toepassingen hebben elk andere vermogens, profielen en sturing, maar kunnen
 <script defer="" src="../../src/Frontend/Cache/MinifiedJs/5b0b881bf746c46604353669e0356580.js"></script>
 <script defer="" src="../../src/Frontend/Themes/Siesqo/Core/Js/bundle.js"></script>
 <script defer="" src="../../src/Frontend/Cache/MinifiedJs/05f1fef95bb1cd1c81c2c72815c00aa3.js"></script>
-</body>
+<script>
+/* Mirror: form -> mail client */
+(function(){
+  document.querySelectorAll('form[data-mirror-mail]').forEach(function(f){
+    f.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var lines=[];
+      f.querySelectorAll('input,select,textarea').forEach(function(el){
+        if(!el.name || el.type==='submit' || el.type==='hidden' || el.type==='button') return;
+        var label='';
+        try{ var lb=el.closest('.form-group')||el.closest('label'); var l2=lb&&lb.querySelector('label'); label=l2?l2.innerText.trim():''; }catch(e){}
+        if(el.type==='checkbox'||el.type==='radio'){ if(el.checked) lines.push((label||el.name)+': '+(el.value||'x')); }
+        else if(el.value){ lines.push((label?label+' ('+el.name+')':el.name)+': '+el.value); }
+      });
+      var to=f.getAttribute('data-mirror-mail')||'info@powerland.be';
+      var subj=f.getAttribute('data-mirror-subject')||document.title;
+      var a=document.createElement('a');
+      a.href='mailto:'+to+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n\n'));
+      a.style.display='none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function(){a.remove();},500);
+    });
+  });
+})();
+</script></body>
 </html>
